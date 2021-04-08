@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ATREND</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+        <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">  
+    </head>
+    <body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="imagens/logo_direita.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="imagens/cart.png" width="25px" height="25px">
+                <img src="imagens/menu.png" class="menu-icon" 
+                onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>A melhor marca<br>de qualidade!</h1>
+                    <p>
+                        O sucesso nem sempre tem a ver com grandeza.<br> 
+                        É uma questão de consistência.<br>
+                        O trabalho árduo consistente leva ao sucesso.<br> 
+                        A grandeza virá.
+                    </p>
+                        <a href="" class="btn">Explorar Mais &#8594;</a>
+                </div>
+                <div class="col-2">
+                    <img src="imagens/tshirt_site.png">
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Categorias-->
+<div class="categorias">
+    <h2 class="title">Produtos</h2>
+    <div class="row">
+        <div class="col-3">
+            <img src="imagens/1.png">
+        </div>
+        <div class="col-3">
+            <img src="imagens/2.png">
+        </div>
+        <div class="col-3">
+            <img src="imagens/3.png">
+        </div>
+    </div>
+</div>
+<!-------Footer-------->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Faz o download da nossa App</h3>
+                <p>Download da app para os sistemas android e ios</p>
+                <div class="app-logo">
+                    <img src="imagens/app-store.png">
+                    <img src="imagens/play-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="imagens/logo_direita_branco.png" width="200">
+                <p>O nosso objetivo é tornar o prazer e os benefícios do desporto acessíveis a todos!</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li>Cupões</li>
+                    <li>Blog Post</li>
+                    <li>Política de devolução</li>
+                    <li>Junte-se a um afiliado</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Siga-nos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2021 - ATREND</p>
+    </div>
+</div>
+<!---------javascript menu----------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px"
+            }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+    </body>
+    </html>
